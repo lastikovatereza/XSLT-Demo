@@ -1,0 +1,80 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<friendList>
+    <friend gender="male">
+        <name>Alex</name>
+    </friend>
+    <friend>
+        <name>Mary</name>
+    </friend>
+    <friend>
+        <name>Rachel</name>
+    </friend>
+    <bestFriend>
+        <name>Anna</name>
+        <eligibility>Age &gt; 18</eligibility>
+    </bestFriend>
+</friendList>
+
+<!-- SPECIAL SYMBOLS
+& = &amp;
+< = &lt;
+> = &gt;
+" = &quot;
+' = &apos;
+-->
+<root xmlns:f="https://www.w3.org/furniture"
+xmlns:h="https://www.w3.org/TR/html4/"> <!-- WE CAN NAME IT IN THE BEGINNING OF THE ADDITIONAL ROOT ELEMENT-->
+<table>
+    <name>Coffee Table</name>
+    <width>10</width>
+    <lenght>20</lenght>
+</table>
+<f:table>
+    <f:name>Coffee Table</f:name>
+    <f:width>10</f:width>
+    <f:lenght>20</f:lenght>
+<f:table>
+
+<table>
+    <tr>
+        <td>Apples</td>
+        <td>Bananas</td>
+    </tr>
+</table>
+<h:table xmlns:h="https://www.w3.org/TR/html4/">
+    <h:tr>
+        <h:td>Apples</h:td>
+        <h:td>Bananas</h:td>
+    </h:tr>
+</h:table>
+</root>
+
+<bookstore>
+    <book category="cooking">
+        <title lang="en">Everyday Italian</title>
+        <author>Giada jdklasjdksdjkl</author>
+        <year>2005</year>
+        <price>30.00</price>
+    </book>
+    <book cathegory="children">
+        <title lang="en">Harry Potter</title>
+        <author>J. K. Rowling</author>
+        <year>2006</year>
+        <price>20.00</price>
+    </book>
+</bookstore>
+<!-- XPATH 
+/bookstore/book[2]/author   = J. K. ROWLING
+
+
+//book[@id='123']
+-->
+
+<class>
+    <student>
+        <firstname>Graham</firstname>
+        <lastname>Bell</lastname>
+        <nickname>Garry</nickname>
+    </student>
+</class>
